@@ -1,0 +1,10 @@
+:root {
+    --main-ff: 'Inter-Variable', 'Arial', sans-serif;
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semiBold: 600;
+    --fw-bold: 700;
+    --main-color: #404d63;
+    --accent-color: #2491eb;
+    --background-color: #f8f8f8;
+}

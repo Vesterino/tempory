@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Inter-Variable';
+    src:
+    local('Inter-Variable'),
+    url(../fonts/Inter-Variable.woff2) format('woff2'),
+    url(../fonts/Inter-Variable.woff) format('woff'),
+    url(../fonts/Inter-Variable.ttf) format(truetype);
+    font-weight: 300 400 500 600 700 800;
+    font-display: swap;
+}
