@@ -725,7 +725,6 @@
 
 .contacts__map {
     margin-block-start: 38px;
-    width: 100%;
 }
 
 .contacts__card {
@@ -1213,12 +1212,12 @@
     }
 
     .contacts__card:nth-child(1) {
-        bottom: 27%;
+        bottom: 24%;
         left: 33%;
     }
 
     .contacts__card:nth-child(2) {
-        bottom: 3%;
+        bottom: 6%;
         left: 33%;
     }
 
@@ -1235,12 +1234,10 @@
 
 @media (width <= 850px) {
     .contacts__card:nth-child(1) {
-        bottom: 27%;
         left: 32%;
     }
 
     .contacts__card:nth-child(2) {
-        bottom: 2%;
         left: 32%;
     }
 }
@@ -1312,7 +1309,6 @@
 
     .contacts__card:nth-child(2) {
         left: 28%;
-        bottom: 1%
     }
 }
 
@@ -1323,12 +1319,10 @@
 
     .contacts__card:nth-child(1) {
         left: 26%;
-        bottom: 35%;
     }
 
     .contacts__card:nth-child(2) {
         left: 26%;
-        bottom: 9%
     }
 
     .contact-us {
@@ -1365,12 +1359,10 @@
 
     .contacts__card:nth-child(1) {
         left: 24%;
-        bottom: 35%;
     }
 
     .contacts__card:nth-child(2) {
         left: 24%;
-        bottom: 9%
     }
 }
 
@@ -1422,12 +1414,10 @@
 
     .contacts__card:nth-child(1) {
         left: 22%;
-        bottom: 35%;
     }
 
     .contacts__card:nth-child(2) {
         left: 22%;
-        bottom: 9%
     }
 
     .footer {
@@ -1534,7 +1524,6 @@
 
     .contacts__card:nth-child(1) {
         left: 17%;
-        bottom: 39%;
     }
 
     .advantages__request::before {
@@ -1547,7 +1536,6 @@
 
     .contacts__card:nth-child(2) {
         left: 17%;
-        bottom: 10%
     }
 
     .contacts__title {
@@ -1586,9 +1574,6 @@
 }
 
 @media (width <= 450px) {
-    .contacts__map {
-        height: 199px;
-    }
 
     .contacts__card:nth-child(1) {
         left: 13%;
@@ -1627,12 +1612,10 @@
 @media (width <= 420px) {
     .contacts__card:nth-child(1) {
         left: 10%;
-        bottom: 35%;
     }
 
     .contacts__card:nth-child(2) {
         left: 10%;
-        bottom: 8%
     }
 
     .footer__line {
@@ -1647,12 +1630,10 @@
 
     .contacts__card:nth-child(1) {
         left: 8%;
-        bottom: 35%;
     }
 
     .contacts__card:nth-child(2) {
         left: 8%;
-        bottom: 8%
     }
 
     .footer__line {
@@ -1671,12 +1652,10 @@
 @media (width <= 389px) {
     .contacts__card:nth-child(1) {
         left: 5%;
-        bottom: 35%;
     }
 
     .contacts__card:nth-child(2) {
         left: 5%;
-        bottom: 8%
     }
 }
 
