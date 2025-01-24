@@ -1195,8 +1195,8 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 60%;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+        height: 50%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
         z-index: 2;
     }
 
@@ -1297,9 +1297,6 @@
 /* Планшеты */
 
 @media (width <= 768px) {
-    .intro__info {
-        margin: 490px 0 0 90px;
-    }
 
     .trust {
         margin: 30px 60px;
@@ -1405,7 +1402,7 @@
 
 @media (width <= 620px) {
     .intro__info {
-        margin: 525px 0 0 60px;
+        margin: 460px 0 0 60px;
     }
 
     .intro-title {
@@ -1457,11 +1454,12 @@
     }
 
     .intro__info {
-        margin: 530px 0 0 20px
+        margin: 460px 0 0 20px
     }
 
     .intro-text {
-        padding-inline-end: 240px;
+        padding-inline-end: 270px;
+        padding-block-start: 15px;
     }
 
     .contact-us {
@@ -1509,10 +1507,6 @@
     .intro__image {
         background-position: 60%;
     }
-
-    /* .intro__color {
-        clip-path: polygon(0 0, -100% 0, 392% 100%, 0 100%);
-    } */
 
     .intro__button {
         width: 351px;
@@ -1742,7 +1736,7 @@
     }
 
     .intro__info {
-        margin: 560px 0 0 20px;
+        margin: 460px 0 0 20px;
     }
 
     .contacts__card:nth-child(1) {
