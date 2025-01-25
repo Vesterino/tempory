@@ -5,12 +5,16 @@
     color: var(--main-color);
 }
 
-.mU4ghb-N4imRe-yePe5c {
-    display: none;
+button, .reviews__button-prev, .reviews__button-next {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
-.contacts__map.i4ewOd-pzNkMb-haAclf {
-    display: none;
+button:active, .reviews__button-prev:active, .reviews__button-next:active {
+    background-color: transparent;
+    box-shadow: none;
 }
 
 /* Header */
