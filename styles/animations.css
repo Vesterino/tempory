@@ -1,5 +1,13 @@
+@-webkit-keyframes pulse {
+    100% {
+        -webkit-box-shadow: 0 0 0 10px #2491eb00;
+        box-shadow: 0 0 0 10px #2491eb00;
+    }
+}
+
 @keyframes pulse {
     100% {
+        -webkit-box-shadow: 0 0 0 10px #2491eb00;
         box-shadow: 0 0 0 10px #2491eb00;
     }
 }

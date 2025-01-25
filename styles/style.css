@@ -59,6 +59,7 @@
     color: #fff;
     font-weight: var(--fw-medium);
     cursor: pointer;
+    -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
 
@@ -67,14 +68,24 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0 0 #2491eb;
     box-shadow: 0 0 #2491eb;
     width: 100%;
     height: 100%;
     border-radius: 50px;
     background-color: var(--accent-color);
+    -webkit-animation: pulse 2s cubic-bezier(.66,0,0,1) infinite;
     animation: pulse 2s cubic-bezier(.66,0,0,1) infinite;
     z-index: -1;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .button::after {
+        -webkit-animation: pulse 2s cubic-bezier(.66,0,0,1) infinite;
+        animation: pulse 2s cubic-bezier(.66,0,0,1) infinite;
+    }
 }
 
 .button-image {
@@ -512,6 +523,7 @@
     background: radial-gradient(50% 50% at 50% 50%, #2491eb 0, #2491eb);
     border-radius: 55555px;
     content: "";
+    -webkit-filter: blur(80px);
     filter: blur(80px);
     height: 1160px;
     position: absolute;
@@ -519,12 +531,14 @@
     top: 100px;
     width: 1160px;
     z-index: 0;
+    -webkit-will-change: filter, transform;
     will-change: filter, transform;
 }
 
 .advantages__request::after {
     background: #0f1216;
     content: "";
+    -webkit-filter: blur(80px);
     filter: blur(80px);
     height: 711px;
     left: -50%;
@@ -532,7 +546,16 @@
     top: 75%;
     width: 711px;
     z-index: 0;
+    -webkit-will-change: filter, transform;
     will-change: filter, transform;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .advantages__request::before,
+    .advantages__request::after {
+        -webkit-filter: blur(60px); /* Снижение эффекта для Safari */
+        filter: blur(60px);
+    }
 }
 
 .advantages__request-img {
@@ -693,6 +716,7 @@
 }
 
 .reviews__container {
+    box-sizing: border-box;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -701,22 +725,25 @@
 }
 
 .reviews__cards {
+    box-sizing: border-box;
     position: relative;
     padding-block-start: 50px;
     padding: 50px 0 80px 0;
     display: flex;
     gap: 8px;
+    transform: translateZ(0);
     transition: transform 0.3s ease;
     will-change: transform;
 }
 
 .reviews__card {
+    box-sizing: border-box;
     width: 100%;
     max-width: 326px;
+    flex: 0 0 auto;
     flex-shrink: 0;
     padding: 15px 55px 20px 20px;
     background-color: #fff;
-    box-sizing: border-box;
 }
 
 .reviews__card-head {
@@ -1471,12 +1498,12 @@
     }
 
     .reviews__button-prev::after {
-        left: 20px;
+        left: 35px;
     }
 
     .reviews__button-prev::before {
         width: 30px;
-        left: 30px;
+        left: 45px;
     }
 
     .reviews__button-next::before {
