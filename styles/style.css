@@ -564,7 +564,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 @supports (-webkit-touch-callout: none) {
     .advantages__request::before,
     .advantages__request::after {
-        -webkit-filter: blur(60px); /* Снижение эффекта для Safari */
+        -webkit-filter: blur(60px);
         filter: blur(60px);
     }
 }
@@ -1397,7 +1397,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
     .advantages__request::before,
     .advantages__request::after {
-        filter: blur(50px);
+        filter: blur(40px);
         height: 580px;
         width: 580px;
         right: 0;
@@ -1544,6 +1544,11 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
     .intro__image {
         background-position: 60%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .intro__info {
+        margin: 530px 0 0 20px;
     }
 
     .intro__button {
@@ -1747,11 +1752,6 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
         margin-block-start: 15px;
     }
 
-    .footer__logo {
-        width: 184px;
-        height: 38px;
-    }
-
     .footer__social-mobile {
         gap: 50px;
     }
@@ -1775,10 +1775,6 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
     .intro-title {
         margin-inline-end: 370px;
-    }
-
-    .intro__info {
-        margin: 460px 0 0 20px;
     }
 
     .contacts__card:nth-child(1) {
@@ -1841,10 +1837,6 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
     .intro-text {
         padding-inline-end: 320px;
-    }
-
-    .intro__info {
-        margin: 480px 0 0 10px;
     }
 
     .intro__button {
