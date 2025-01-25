@@ -1,5 +1,9 @@
+/* * {
+    outline: 4px solid green !important;
+} */
+
 .page {
-    width: clamp(390px, 100%, 1920px);
+    width: clamp(320px, 100%, 1920px);
     min-inline-size: 320px;
     font-family: var(--main-ff);
     color: var(--main-color);
@@ -1813,12 +1817,72 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 }
 
 @media (width <= 389px) {
+    .offer__list-item {
+        width: 100%;
+    }
+
+    .contact_us-input {
+        width: 320px;
+    }
+
     .contacts__card:nth-child(1) {
         left: 5%;
     }
 
     .contacts__card:nth-child(2) {
         left: 5%;
+    }
+}
+
+@media (width <= 370px) {
+    .contact-us-input {
+        width: 320px;
+    }
+
+    .advantages__request {
+        min-width: 320px;
+    }
+
+    .advantages__request-button {
+        min-width: 230px;
+        gap: 25px;
+    }
+
+    .contacts__card {
+        width: 310px;
+    }
+
+    .footer__line {
+        width: 280px;
+    }
+
+    .contacts__card:nth-child(1) {
+        left: 7%;
+    }
+
+    .contacts__card:nth-child(2) {
+        left: 7%;
+    }
+}
+
+@media (width <= 340px) {
+    .contacts__card:nth-child(1) {
+        left: 4%;
+    }
+
+    .contacts__card:nth-child(2) {
+        left: 4%;
+        bottom: 5%;
+    }
+}
+
+@media (width <= 330px) {
+    .contacts__card:nth-child(1) {
+        left: 3%;
+    }
+
+    .contacts__card:nth-child(2) {
+        left: 3%;
     }
 }
 
