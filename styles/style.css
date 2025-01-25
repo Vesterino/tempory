@@ -1623,7 +1623,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
 
     .contact-us {
-        padding: 28px 7px 92px 0;
+        padding: 28px 0 92px 0;
     }
 
     .contact-us__title {
