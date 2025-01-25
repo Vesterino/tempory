@@ -1839,12 +1839,26 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
         width: 320px;
     }
 
+    .intro-text {
+        padding-inline-end: 320px;
+    }
+
+    .intro__info {
+        margin: 480px 0 0 10px;
+    }
+
+    .intro__button {
+        width: 300px;
+        gap: 60px;
+    }
+
     .advantages__request {
         min-width: 320px;
     }
 
     .advantages__request-button {
         min-width: 230px;
+        margin-block-start: 15px;
         gap: 25px;
     }
 
