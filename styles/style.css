@@ -6,6 +6,7 @@
 }
 
 button, .reviews__button-prev, .reviews__button-next {
+    all: unset;
     -webkit-tap-highlight-color: transparent;
     outline: none;
     user-select: none;
@@ -432,8 +433,9 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     min-width: 258px;
     height: 69px;
     line-height: 19px;
+    text-align: center;
     font-weight: var(--fw-bold);
-    font-size: clamp(0.8125rem, 0.7169rem + 0.3922vw, 1.1875rem);
+    font-size: clamp(0.8125rem, 0.7169rem + 0.3 922vw, 1.1875rem);
 }
 
 /* Advantages */
@@ -1503,12 +1505,12 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .reviews__button-prev::after {
-        left: 35px;
+        left: 12px;
     }
 
     .reviews__button-prev::before {
         width: 30px;
-        left: 45px;
+        left: 22px;
     }
 
     .reviews__button-next::before {
@@ -1617,7 +1619,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
 
     .contact-us {
-        padding: 28px 0 92px 0;
+        padding: 28px 7px 92px 0;
     }
 
     .contact-us__title {
@@ -1686,7 +1688,11 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .offer {
-        padding: 0 40px 70px;
+        padding: 0 0 70px;
+    }
+
+    .offer__title {
+        padding-inline-start: 40px;
     }
 }
 
