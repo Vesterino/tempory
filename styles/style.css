@@ -1542,13 +1542,22 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
         padding-block-end: 10px;
     }
 
+    .intro__color {
+        top: 33%;
+        height: 55%;
+    }
+
     .intro__image {
-        background-position: 60%;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background-position: 50% 0%;
+        background-size: 155%;
+        z-index: 0;
     }
 
     .intro__info {
-        margin: 530px 0 0 20px;
+        margin: 0;
+        position: absolute;
+        bottom: 110px;
+        left: 15px;
     }
 
     .intro__button {
