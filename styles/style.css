@@ -1542,9 +1542,13 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
         padding-block-end: 10px;
     }
 
+    .intro {
+        min-height: 776px;
+    }
+
     .intro__color {
-        top: 33%;
-        height: 55%;
+        top: 37%;
+        height: 60%;
     }
 
     .intro__image {
@@ -1555,9 +1559,10 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
     .intro__info {
         margin: 0;
-        position: absolute;
+        padding: 300px 0 0 20px;
+        /* position: absolute;
         bottom: 110px;
-        left: 15px;
+        left: 15px; */
     }
 
     .intro__button {
