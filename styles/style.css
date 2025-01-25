@@ -1543,7 +1543,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .intro {
-        min-height: 776px;
+        min-height: 830px;
     }
 
     .intro__color {
@@ -1559,10 +1559,14 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
     .intro__info {
         margin: 0;
-        padding: 300px 0 0 20px;
+        padding: 325px 0 0 20px;
         /* position: absolute;
         bottom: 110px;
         left: 15px; */
+    }
+
+    .intro__title {
+        margin-inline-end: 300px
     }
 
     .intro__button {
@@ -1787,10 +1791,6 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
         padding-block-end: 20px;
     }
 
-    .intro-title {
-        margin-inline-end: 370px;
-    }
-
     .contacts__card:nth-child(1) {
         left: 10%;
     }
@@ -1818,7 +1818,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .trust {
-        margin: 30px 20px;
+        margin: 0 20px 30px;
     }
 
     .trust__info-list {
