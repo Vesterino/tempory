@@ -1239,7 +1239,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .intro__info {
-        margin: 460px 0 0 90px
+        margin: 100px 0 0 50px
     }
 
     .intro-title {
@@ -1439,9 +1439,6 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 }
 
 @media (width <= 620px) {
-    .intro__info {
-        margin: 460px 0 0 60px;
-    }
 
     .intro-title {
         margin-inline-end: 300px;
@@ -1492,7 +1489,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .intro__info {
-        margin: 460px 0 0 20px
+        margin: 105px 0 0 30px
     }
 
     .intro-text {
@@ -1543,12 +1540,12 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .intro {
-        min-height: 830px;
+        min-height: 820px;
     }
 
     .intro__color {
-        top: 36%;
-        height: 60%;
+        top: 292px;
+        height: 480px;
     }
 
     .intro__image {
@@ -1560,8 +1557,16 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .intro__info {
-        margin: 0;
-        padding: 0 0 0 20px;
+        margin: 10px 0 0 20px;
+    }
+
+    .intro-text {
+        line-height: 22px;
+    }
+
+    .intro__info-contacts {
+        padding-block-start: 29px;
+        gap: 13px;
     }
 
     .intro__button {
@@ -1842,6 +1847,10 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 @media (width <= 370px) {
     .contact-us-input {
         width: 320px;
+    }
+
+    .intro__color {
+        height: 510px;
     }
 
     .intro-text {
