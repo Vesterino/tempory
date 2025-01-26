@@ -212,7 +212,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     margin: 70px 235px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    gap: 450px;
 }
 
 .trust__title {
@@ -640,7 +640,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block-start: 65px;
+    padding-block-start: 62px;
 }
 
 .reviews__title {
@@ -690,14 +690,14 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 }
 
 .reviews__button-prev::before {
-    left: -85px;
+    left: -94px;
     width: 84px;
     height: 2px;
     background-color: #9CA2AE;
 }
 
 .reviews__button-prev::after {
-    left: -95px;
+    left: -104px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -706,14 +706,14 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 }
 
 .reviews__button-next:before {
-    right: -85px;
+    right: -94px;
     width: 84px;
     height: 2px;
     background-color: #9CA2AE;
 }
 
 .reviews__button-next::after {
-    right: -95px;
+    right: -104px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -753,7 +753,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     max-width: 326px;
     flex: 0 0 auto;
     flex-shrink: 0;
-    padding: 15px 55px 20px 20px;
+    padding: 15px 55px 50px 20px;
     background-color: #fff;
 }
 
@@ -816,7 +816,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
 .contacts__card:nth-child(1) {
     bottom: 8%;
-    left: 30%;
+    left: 32%;
 }
 
 .contacts__card:nth-child(2) {
@@ -891,13 +891,13 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
 .footer__firstplace-mobile {
     display: flex;
-    gap: 50px;
+    gap: 164px;
 }
 
 .footer__social-mobile {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 66px;
 }
 
 .footer__phone {
@@ -939,7 +939,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
 .footer__contacts {
     display: flex;
-    gap: 30px;
+    gap: 70px;
 }
 
 .footer__contacts-item {
@@ -1057,7 +1057,8 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .trust {
-        margin: 70px 0;
+        margin: 70px 110px;
+        gap: 350px;
     }
 
     .offer {
@@ -1535,12 +1536,11 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
 @media (width <= 500px) {
     .header {
-        margin: 10px 5px 14px;
-        padding-block-end: 10px;
+        margin: 10px 1px 14px;
     }
 
     .intro {
-        min-height: 820px;
+        min-height: 810px;
     }
 
     .intro__color {
@@ -1565,8 +1565,13 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .intro__info-contacts {
-        padding-block-start: 29px;
+        padding-block-start: 32px;
         gap: 13px;
+    }
+
+    .intro__info-social {
+        padding-block-start: 38px;
+        padding-block-end: 0;
     }
 
     .intro__button {
@@ -1575,6 +1580,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
         gap: 80px;
         font-size: 13px;
         font-weight: var(--fw-bold);
+        margin-block-start: 35px;
     }
 
     .intro__button-img {
@@ -1582,12 +1588,9 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
         height: 41px;
     }
 
-    .offer {
-        padding: 0 22px 70px;
-    }
-
     .offer__title {
         padding-block-start: 30px;
+        padding-inline-start: 23px;
     }
 
     .offer__list-items {
@@ -1650,16 +1653,47 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .contact-us__title {
-        padding-inline-start: 40px;
+        padding-inline-start: 14px;
+    }
+
+    .contact-us-forms-secondary {
+        gap: 46px
     }
 
     .contact-us__button {
         min-width: 238px;
         height: 42px;
+        font-size: 13px;
+    }
+
+    .advantages {
+        padding: 0 22px 25px;
+    }
+
+    .advantages__title {
+        padding-block-start: 36px;
+    }
+
+    .advantages__list-item-text {
+        padding-block-start: 8px;
+    }
+
+    .advantages__list-item-span {
+        top: -5px;
+        right: 2px;
+    }
+
+    .advantages__list-item:nth-child(2) .advantages__list-item-span {
+        right: -8px;
+        top: -6px
+    }
+
+    .advantages__list-item:nth-child(3) .advantages__list-item-span {
+        right: -6px;
     }
 
     .contacts {
-        padding-block-end: 400px;
+        padding-block-end: 290px;
     }
 
     .contact-us-forms {
@@ -1668,7 +1702,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
     .contacts__card:nth-child(1) {
         left: 17%;
-        bottom: 37%;
+        bottom: 33%;
     }
 
     .reviews {
@@ -1691,7 +1725,22 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
     .contacts__card:nth-child(2) {
         left: 17%;
-        bottom: 7%;
+        bottom: 5%;
+    }
+
+    .clock-mobile {
+        width: 13px;
+        height: 13px;
+    }
+
+    .phone-mobile {
+        width: 13px;
+        height: 13px;
+    }
+
+    .mail-mobile {
+        width: 13px;
+        height: 11px;
     }
 
     .contacts__title {
@@ -1703,7 +1752,36 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .reviews__cards {
-        padding: 50px 0 36px 0;
+        padding: 23px 0 36px 0;
+    }
+
+    .reviews__card {
+        padding: 15px 25px 60px 20px;
+    }
+
+    .reviews__card-head {
+        flex: flex-start;
+    }
+
+    .contacts__map {
+        margin-block-start: 20px;
+    }
+
+    .contacts__card-head {
+        padding-inline: 18px;
+    }
+
+    .contacts__card-points {
+        padding: 19px 0 16px 17px;
+        gap: 10px;
+    }
+
+    .contacts__card-title {
+        padding: 22px 0 0 0;
+    }
+
+    .reviews__card-text {
+        padding-block-start: 12px;
     }
 
     .reviews {
@@ -1715,11 +1793,31 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .offer {
-        padding: 0 0 70px;
+        padding: 0 0 15px;
     }
 
-    .offer__title {
-        padding-inline-start: 40px;
+    .footer__phone {
+        gap: 7px;
+    }
+
+    .footer__social-facebook {
+        padding-inline-start: 14px;
+    }
+
+    .footer__contacts-link {
+        text-decoration: none;
+    }
+
+    .footer__contacts-content {
+        gap: 3px;
+    }
+
+    .footer__licenses {
+        padding: 14px 22px 12px
+    }
+
+    .footer__contacts {
+        gap: 24px
     }
 }
 
@@ -1759,10 +1857,12 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
     .contacts__card:nth-child(1) {
         left: 13%;
+        bottom: 34%;
     }
 
     .contacts__card:nth-child(2) {
         left: 13%;
+        bottom: 5%;
     }
 
     .footer {
@@ -1781,7 +1881,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
     .footer__line {
         width: 370px;
-        height: 2px;
+        height: 1px;
         background-color: #c4c4c480;
     }
 }
@@ -1807,10 +1907,12 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 @media (width <= 400px) {
     .contacts__card:nth-child(1) {
         left: 8%;
+        bottom: 35%;
     }
 
     .contacts__card:nth-child(2) {
         left: 8%;
+        bottom: 5%;
     }
 
     .footer__line {
@@ -1836,11 +1938,11 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .contacts__card:nth-child(1) {
-        left: 5%;
+        left: 6%;
     }
 
     .contacts__card:nth-child(2) {
-        left: 5%;
+        left: 6%;
     }
 }
 
@@ -1896,7 +1998,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 
     .contacts__card:nth-child(2) {
         left: 4%;
-        bottom: 5%;
+        bottom: 3%;
     }
 }
 
