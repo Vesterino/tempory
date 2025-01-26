@@ -1,7 +1,3 @@
-/* * {
-    outline: 4px solid green !important;
-} */
-
 .page {
     width: clamp(320px, 100%, 1920px);
     min-inline-size: 320px;
@@ -1046,6 +1042,16 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 }
 
+@media (width <= 1600px) {
+    .footer__firstplace-mobile {
+        gap: 90px;
+    }
+
+    .footer__contacts {
+        gap: 35px;
+    }
+}
+
 @media (width <= 1450px) {
     .header {
         margin: 18px 110px;
@@ -1102,6 +1108,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     .trust {
         margin: 70px 120px;
         justify-content: space-between;
+        gap: 0;
     }
 
     .recommendations {
@@ -1338,7 +1345,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
 @media (width <= 768px) {
 
     .trust {
-        margin: 30px 60px;
+        margin: 30px 70px 60px;
         flex-direction: column;
         align-items: flex-start;
         gap: 23px
@@ -1952,7 +1959,7 @@ button:active, .reviews__button-prev:active, .reviews__button-next:active {
     }
 
     .intro__color {
-        height: 510px;
+        height: 470px;
     }
 
     .intro-text {
